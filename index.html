@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Courier | Premium Same Day Courier London Service</title>
+  <meta name="description" content="Premium Same Day Courier London service. Swift, secure, and reliable same-day delivery across the capital. Book your London courier today.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #ffffff;
+      color: #1e1e2a;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    :root {
+      --navy: #0b1c2f;
+      --navy-deep: #07111f;
+      --navy-light: #1a3044;
+      --charcoal: #2c2f36;
+      --gold: #c8a86b;
+      --gold-soft: #e3cfaa;
+      --gold-bright: #dabf7c;
+      --white: #ffffff;
+      --off-white: #f9fafc;
+      --gray-light: #eef1f6;
+      --gray-mid: #8b95a5;
+      --shadow-sm: 0 12px 28px -8px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 24px 48px -12px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 40px 64px -16px rgba(0, 0, 0, 0.18), 0 12px 28px rgba(0, 0, 0, 0.06);
+      --border-radius-card: 24px;
+      --border-radius-sm: 14px;
+      --transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 4.8rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .text-gold {
+      color: var(--gold);
+    }
+
+    .text-muted {
+      color: #5e6879;
+      font-weight: 400;
+    }
+
+    /* ---------- KEYWORD LINK STYLE ---------- */
+    a.keyword-link {
+      color: var(--gold);
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1.5px;
+      transition: var(--transition);
+    }
+    a.keyword-link:hover {
+      color: var(--gold-bright);
+      text-decoration-thickness: 2px;
+    }
+
+    /* ---------- BUTTONS ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 34px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1.5px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy-deep);
+      box-shadow: 0 12px 28px -8px rgba(200, 168, 107, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-bright);
+      transform: translateY(-3px);
+      box-shadow: 0 22px 38px -10px rgba(200, 168, 107, 0.45);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: white;
+      border-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-outline-light:hover {
+      border-color: var(--gold);
+      background: rgba(200, 168, 107, 0.08);
+      transform: translateY(-3px);
+    }
+
+    .btn-secondary {
+      background: var(--navy);
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: var(--navy-light);
+      transform: translateY(-3px);
+    }
+
+    /* ---------- HEADER / NAV ---------- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: var(--transition);
+      background: transparent;
+    }
+
+    .navbar.scrolled {
+      background: rgba(7, 17, 31, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 14px 0;
+      box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .logo i {
+      color: var(--gold);
+      font-size: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      margin-left: 20px;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #07111f 0%, #0f1e30 100%);
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.55;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(7,17,31,0.92) 0%, rgba(7,17,31,0.6) 50%, rgba(7,17,31,0.5) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      padding: 160px 0 120px;
+      color: white;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 168, 107, 0.12);
+      border: 1px solid rgba(200, 168, 107, 0.3);
+      padding: 10px 22px;
+      border-radius: 60px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      color: var(--gold-soft);
+      margin-bottom: 30px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero h1 {
+      margin-bottom: 24px;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 580px;
+      margin-bottom: 44px;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 60px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 50px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .stat-item h4 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+
+    .stat-item span {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.65);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- SECTIONS GENERAL ---------- */
+    section {
+      padding: 110px 0;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      background: rgba(200, 168, 107, 0.08);
+      padding: 6px 16px;
+      border-radius: 40px;
+    }
+
+    .section-header {
+      max-width: 680px;
+      margin-bottom: 60px;
+    }
+
+    .section-header h2 {
+      margin-bottom: 20px;
+      color: var(--navy-deep);
+    }
+
+    .section-header p {
+      font-size: 1.15rem;
+      color: #4d5769;
+      line-height: 1.7;
+      font-weight: 400;
+    }
+
+    /* ---------- SERVICE CARDS ---------- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--border-radius-card);
+      padding: 48px 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(0, 0, 0, 0.02);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(200, 168, 107, 0.2);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon {
+      width: 68px;
+      height: 68px;
+      background: rgba(200, 168, 107, 0.08);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+      color: var(--gold);
+      font-size: 2rem;
+      transition: var(--transition);
+    }
+
+    .service-card:hover .service-icon {
+      background: var(--gold);
+      color: var(--navy-deep);
+      transform: scale(1.05);
+    }
+
+    .service-card h3 {
+      margin-bottom: 14px;
+      color: var(--navy-deep);
+    }
+
+    .service-card p {
+      color: #5e6879;
+      margin-bottom: 26px;
+      line-height: 1.7;
+    }
+
+    .service-link {
+      color: var(--navy);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .service-link i {
+      transition: var(--transition);
+    }
+
+    .service-link:hover {
+      color: var(--gold);
+    }
+
+    .service-link:hover i {
+      transform: translateX(5px);
+    }
+
+    /* ---------- WHY US / FEATURE ---------- */
+    .why-us {
+      background: var(--off-white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .why-image {
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+
+    .why-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: var(--transition);
+    }
+
+    .why-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .why-content h2 {
+      margin-bottom: 24px;
+      color: var(--navy-deep);
+    }
+
+    .why-content > p {
+      color: #4d5769;
+      margin-bottom: 40px;
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      background: white;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 1.4rem;
+      box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-text h4 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      color: var(--navy-deep);
+    }
+
+    .feature-text p {
+      color: #5e6879;
+      line-height: 1.6;
+      font-size: 0.98rem;
+    }
+
+    /* ---------- TESTIMONIAL / TRUST ---------- */
+    .trust {
+      background: var(--navy-deep);
+      color: white;
+    }
+
+    .trust .section-header h2 {
+      color: white;
+    }
+
+    .trust .section-header p {
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .trust-card {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--border-radius-card);
+      padding: 38px 32px;
+      transition: var(--transition);
+      backdrop-filter: blur(4px);
+    }
+
+    .trust-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(200, 168, 107, 0.3);
+      transform: translateY(-6px);
+    }
+
+    .trust-card i {
+      font-size: 2.2rem;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .trust-card h4 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    .trust-card p {
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    /* ---------- CTA BANNER ---------- */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+      border-radius: 40px;
+      padding: 80px 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-banner::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(200, 168, 107, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .cta-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-text h2 {
+      color: white;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: 12px;
+    }
+
+    .cta-text p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1rem;
+    }
+
+    .cta-banner .btn {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #050b14;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 70px 0 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+      max-width: 280px;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .footer-col h5 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 12px;
+    }
+
+    .footer-col a {
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      transition: var(--transition);
+      font-size: 0.95rem;
+    }
+
+    .footer-col a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-social a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .footer-social a:hover {
+      color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* ---------- ANIMATIONS (scroll reveal) ---------- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: block;
+      }
+
+      .hero-content {
+        padding: 130px 0 90px;
+      }
+
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .cta-banner {
+        padding: 50px 30px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <i class="fas fa-bolt"></i>
+        <span>LON<span style="color: var(--gold);">COURIER</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Coverage</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-primary" style="padding: 12px 28px;">Get a quote</a>
+      </div>
+      <button class="mobile-toggle" aria-label="menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-map-pin"></i> London’s premium same‑day courier
+      </div>
+      <h1>Swift. Secure.<br>Uncompromising.</h1>
+      <p>Looking for a trusted <a href="https://flextro.co.uk/courier-services/same-day-courier/london/" class="keyword-link">Same Day Courier London</a>? Experience white‑glove delivery across the capital — real‑time tracking, dedicated drivers, and a level of care that sets a new standard.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary">Book a courier <i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="btn btn-outline-light">Our services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h4>45min</h4>
+          <span>Average pickup</span>
+        </div>
+        <div class="stat-item">
+          <h4>98%</h4>
+          <span>On‑time delivery</span>
+        </div>
+        <div class="stat-item">
+          <h4>24/7</h4>
+          <span>Live support</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What we do</span>
+        <h2>Tailored logistics for every need</h2>
+        <p>From urgent documents to fragile items, our fleet and trained couriers handle it all with precision and style.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-motorcycle"></i></div>
+          <h3>Same‑day express</h3>
+          <p>Point‑to‑point delivery within London in under 90 minutes. Ideal for legal, financial and time‑critical packages.</p>
+          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-box-open"></i></div>
+          <h3>Dedicated van</h3>
+          <p>Exclusive use of a vehicle and driver for multi‑drop routes, retail restocks, or sensitive equipment moves.</p>
+          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class="fas fa-clock"></i></div>
+          <h3>Overnight & scheduled</h3>
+          <p>Plan ahead with our reliable next‑day or timed delivery slots, including weekend and evening coverage.</p>
+          <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="why-us">
+    <div class="container why-grid">
+      <div class="why-image reveal">
+        <img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop" alt="Courier handing over a package in London">
+      </div>
+      <div class="why-content reveal reveal-delay-1">
+        <span class="section-label">Why London Courier</span>
+        <h2>Precision, care, and local expertise</h2>
+        <p>As a leading <a href="https://flextro.co.uk/courier-services/same-day-courier/london/" class="keyword-link">Same Day Courier London</a> provider, we combine cutting‑edge technology with old‑school reliability. Every item is handled as if it were our own, and every route is optimised for speed.</p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="feature-text">
+              <h4>Fully insured & vetted</h4>
+              <p>Every delivery is covered up to £10k, and all our couriers are DBS‑checked professionals.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-satellite-dish"></i></div>
+            <div class="feature-text">
+              <h4>Live GPS tracking</h4>
+              <p>Watch your parcel move in real time with our intuitive tracking portal and SMS updates.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+            <div class="feature-text">
+              <h4>Zero‑emission fleet</h4>
+              <p>Over 60% of our London deliveries are made by electric vehicle or cargo bike.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST / TESTIMONIALS ========== -->
+  <section class="trust">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" style="color: var(--gold);">Trusted by businesses</span>
+        <h2>Delivering for London’s finest</h2>
+        <p>From boutique law firms to luxury retailers, we keep the capital moving.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card reveal reveal-delay-1">
+          <i class="fas fa-quote-right"></i>
+          <h4>“Flawless every time”</h4>
+          <p>We’ve used London Courier for over two years. Their drivers are punctual, polite, and handle our documents with utmost care.</p>
+          <p style="margin-top: 18px; color: var(--gold); font-weight: 500;">— Sarah M., Legal Associate</p>
+        </div>
+        <div class="trust-card reveal reveal-delay-2">
+          <i class="fas fa-quote-right"></i>
+          <h4>“Our go‑to delivery partner”</h4>
+          <p>The live tracking and proactive updates give us complete peace of mind. Highly recommended for any London business.</p>
+          <p style="margin-top: 18px; color: var(--gold); font-weight: 500;">— James T., Retail Operations</p>
+        </div>
+        <div class="trust-card reveal reveal-delay-3">
+          <i class="fas fa-quote-right"></i>
+          <h4>“White‑glove service”</h4>
+          <p>They delivered a fragile sculpture across London without a scratch. The attention to detail is outstanding.</p>
+          <p style="margin-top: 18px; color: var(--gold); font-weight: 500;">— Elena R., Gallery Director</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section style="padding-top: 40px; padding-bottom: 100px;">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="cta-text">
+          <h2>Ready to experience premium courier?</h2>
+          <p>Get a quote in minutes. No hidden fees, no compromise.</p>
+        </div>
+        <a href="https://flextro.co.uk/courier-services/same-day-courier/london/" class="btn btn-primary" style="font-size: 1.1rem; padding: 18px 42px;">Get instant quote <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <i class="fas fa-bolt"></i>
+            <span>LON<span style="color: var(--gold);">COURIER</span></span>
+          </a>
+          <p>Premium <a href="https://flextro.co.uk/courier-services/same-day-courier/london/" class="keyword-link">Same Day Courier London</a> and scheduled services across Greater London. Reliable, insured, and always on time.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#">Same‑day express</a></li>
+            <li><a href="#">Dedicated van</a></li>
+            <li><a href="#">Overnight</a></li>
+            <li><a href="#">International</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Coverage map</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Insurance</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 London Courier. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Scroll reveal with IntersectionObserver
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+
+    // Mobile toggle (simple demo alert)
+    document.querySelector('.mobile-toggle')?.addEventListener('click', () => {
+      alert('Menu – this is a demo. Navigation would open here.');
+    });
+  </script>
+</body>
+</html>
